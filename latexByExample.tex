@@ -15,6 +15,16 @@
 
 \maketitle
 
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\lstlistoflistings
+
+\pagebreak
+
 \section{Introducción}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit mauris, tempor posuere pharetra nec, mattis eget nunc. Aliquam erat volutpat. Pellentesque porta, dolor a egestas porta, mauris lorem vestibulum augue, sit amet luctus diam risus non purus. Aliquam ac tellus porttitor leo rutrum malesuada. Vestibulum cursus tincidunt dolor, vitae commodo risus mattis nec. Nam viverra aliquet lacus, vitae venenatis mauris tincidunt vel. Quisque sed congue velit, in facilisis dolor. Nullam dapibus massa augue, et fringilla elit pharetra maximus. Maecenas eleifend, velit a pulvinar eleifend, nunc neque feugiat odio, ut condimentum felis tellus sed enim. Aenean enim mauris, fermentum non varius eget, faucibus vitae est. Sed nec tempus massa. Morbi maximus mauris in justo egestas luctus.
@@ -100,7 +110,7 @@ Una solución rápida y efectiva, aunque no elegante, es crear las tablas en un 
 
 Esta sección muestra cómo incluir porciones de código, escrito en algún lenguaje de programación, dentro de un documento \LaTeX. Esta inclusión se hace a través del paquete \texttt{listings}, que permite realizar de manera simple y cómoda funciones tan interesantes como colorear la sintaxis del código o numerar las líneas, entre otras funciones. A modo de ejemplo, el Listado~\ref{lst:burbuja} muestra, a través de código Java, cómo ordenar un vector de enteros por el método de la burbuja. 
 
-\lstinputlisting[language=Java,numbers=left,caption={Ordenación de un \emph{array} por el método de la burbuja.},label={lst:burbuja}]{code/bubbleSort.java}
+\lstinputlisting[language=Java,numbers=left,caption={Ordenación de un \emph{array} por el método de la burbuja.},label={lst:burbuja},float]{code/bubbleSort.java}
 
 \section{Citas Bibliográficas e Índices}
 
@@ -110,11 +120,10 @@ Para saber más de \LaTeX se puede consultar su referencia clásica~\cite{lampor
 
 \subsection{Índices}
 
-\section*{Bibliografía}
+En \LaTeX podemos crear índices tanto de la estructura como de figura, tablas o listados, entre otros elementos.
 
 \bibliographystyle{unsrt}
 \bibliography{bibliografiaLatex}
-
 
 \section*{Apéndice. Otras Cuestiones}
 
