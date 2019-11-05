@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 \title{Mi primer documento \LaTeX}
 
@@ -54,7 +55,7 @@ Recuerda además que en \LaTeX se puede generar la salida en tres tipos de forma
 \begin{description}
 	\item[DVI] Formato original de \LaTeX, independiente de la plataforma, describe un documento como una secuencia de comandos a dibujar en una salida.
 	\item[PS] Alternativa a DVI, pensada para ser un lenguaje procesable por impresoras.   
-	\item[PDF] Simplificación de PS, muy orientada al intercambio de documentos electrónicos entre diferentes plataformas.
+	\item[PDF] Simplificación de PS, orientada al intercambio entre diferentes plataformas	de documentos electrónicos 
 \end{description}
 
 \section{Figuras, Tablas y Listados de Código}
@@ -63,7 +64,15 @@ En la Sección~\ref{subsec:secciones} se explicó como crear secciones. Ahora ac
 
 \subsection{Figuras}
 
-Vivamus id urna sit amet risus pretium vulputate. Fusce scelerisque ex sapien, quis eleifend enim aliquet faucibus. In lorem felis, tincidunt id odio luctus, ullamcorper molestie dolor. Praesent facilisis nisl est, tincidunt iaculis elit convallis id. Praesent interdum magna mi. Duis sit amet dictum quam, ut tempus urna. Fusce ornare semper purus in tempor. Praesent at accumsan nulla, in scelerisque mauris. Mauris blandit mi vestibulum tortor fringilla, at ultricies dui mattis. Nunc posuere venenatis elit vel malesuada. Vestibulum finibus urna est, vitae convallis purus facilisis quis. Sed a sem eu orci cursus congue. Donec sapien sapien, fermentum ac justo et, hendrerit imperdiet purus. Phasellus consequat mauris in scelerisque gravida. Suspendisse sollicitudin porta finibus. Nullam sit amet justo ac sem imperdiet aliquam id vel arcu.
+En esta sección sirve para ilustrar cómo incluir bonitas figuras dentro de \LaTeX, como, por ejemplo, el escudo de nuestra maravillosa y excelsa universidad, mostrado en la Figura~\ref{fig:logoUnican}.
+
+\begin{figure}[!tb]
+	\begin{center}
+		\includegraphics[width=0.15\linewidth]{img/uc.eps}
+		\caption{Logo de Unican}
+		\label{fig:logoUnican}
+	\end{center}
+\end{figure}
 
 \subsection{Tablas}
 
