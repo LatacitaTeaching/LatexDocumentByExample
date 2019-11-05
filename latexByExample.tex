@@ -76,11 +76,26 @@ En esta sección sirve para ilustrar cómo incluir bonitas figuras dentro de \La
 
 \subsection{Tablas}
 
-Proin eleifend est at accumsan congue. Maecenas eu iaculis leo. Aliquam fermentum dolor quis odio gravida, ut egestas quam porttitor. Aliquam et lacus sodales, eleifend purus vel, sagittis sapien. Donec blandit cursus nibh, a mattis lectus laoreet nec. Aliquam aliquet dolor at facilisis semper. In cursus odio quis nulla vehicula, ac ullamcorper magna pharetra. Nam quis nulla neque. Duis non enim porttitor, malesuada nisi non, tincidunt justo. Cras molestie ornare ante id luctus. Phasellus consectetur ex sed pulvinar ultricies. Sed scelerisque turpis at lorem aliquet, sit amet pharetra nibh mattis. Integer in pretium nunc, id interdum dui. Mauris condimentum mauris in rutrum semper. Aliquam id ante mi.
+\begin{table}[!b]
+	\begin{center}
+		\begin{tabular}{|l|c|c|c|c|c|}
+		\hline
+		             & Lunes & Martes & Miércoles & Jueves & Viernes \\ \hline
+		 08:30-09:30 & SI    & MD     & MD        & MD     & SI \\ \hline
+		 09:30-10:30 & EC    & EC     & ED        & ED     & MD \\ \hline
+		 10:45-11:45 & EC    & EC     & EC        & ED     & SI \\ \hline	 	          
+		\end{tabular}
+		\caption{Ejemplo de Tabla}
+		\label{tabla:ejemplo}
+	\end{center}
+\end{table}
+
+En \LaTeX, como era de esperar, también se pueden crear tablas. Las tablas son un poco engorrosas, para ser sincero, pero con un poco de paciencia se pueden crear tablas como la Tabla ~\ref{tabla:ejemplo}, que muestra parte del horario del primer cuatrimestre del segundo curso de Ingeniería en Informática.
+
+Una solución rápida y efectiva, aunque no elegante, es crear las tablas en un editor de texto separado e incluirlas dentro del documento como imágenes.
 
 \subsection{Listados de Código}
 
-Pellentesque malesuada, urna sed consequat tempus, leo dolor cursus turpis, nec tincidunt magna nisi scelerisque nisi. Ut laoreet eget lectus a dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum vel lectus iaculis tristique. Quisque mattis pharetra augue a finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut at varius ipsum. Aliquam vehicula mi ac eros pulvinar lobortis.
 
 \section*{Apéndice. Otras Cuestiones}
 
